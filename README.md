@@ -2,14 +2,14 @@
 
 #Portafolio de paginas Landing Page
 
-[Portafolio 1]()
+[Portafolio 1](https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-1/)
 
-[Portafolio 2]()
+[Portafolio 2](https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-2/)
 
-[Portafolio 3]()
+[Portafolio 3](https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-3/)
 
-[Negocio 1]()
+[Negocio 1](https://marcos-pines1.github.io/portafolio-de-paginas-web/negocio-1/)
 
-[Negocio 2]()
+[Negocio 2](https://marcos-pines1.github.io/portafolio-de-paginas-web/negocio-2/)
 
 [Info Page]()
