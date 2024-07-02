@@ -681,7 +681,7 @@ a{
     max-height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: linear-gradient(rgba(0, 22, 40, .6), rgba(0, 22, 40, .6)), url("../assets/bg.jpg");
+    background-image: linear-gradient(rgba(0, 22, 40, .6), rgba(0, 22, 40, .6)), url("./assets/bg.jpg");
     background-position: center;
 }
 
