@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="././assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Meta -->
+
+    <meta name="title" content="Tu Portafolio" />
+    <meta name="description" content="Tu description" />
+
+    <title>Your Portafolio</title>
+  </head>
+  <body>
+    <header class="header" id="Home">
+      <div class="header__container">
+        <nav class="header__nav">
+          <h2 class="nav__logo">Logo<span class="nav__logo__color">.</span></h2>
+          <ul class="nav__items" id="sidemenu">
+            <li class="nav__item">
+              <a href="#Home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#About" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Portafolio" class="nav__link">Portafolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Contact" class="nav__link">Contact</a>
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+
+      <main class="main container">
+        <article class="main__text">
+          <h1 class="main__title">
+            Hi, I'm <span class="main__title__color">Marcos</span> From
+            Argentina
+          </h1>
+          <p class="main__paragraph">Developer FrontEnd</p>
+          <a href="#Contact" class="main__botton btn__contact">Contact Me</a>
+        </article>
+      </main>
+    </header>
+
+    <section class="about__main container" id="About">
+      <div class="about container">
+        <div class="about__row">
+          <figure class="about__colum__img">
+            <img
+              src="./assets/about-img.png"
+              alt="your image"
+              class="about__img"
+            />
+          </figure>
+          <div class="about__colum__title">
+            <h2 class="about__title sub-tittle">About Me</h2>
+            <p class="about__paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati, inventore iste corrupti, dolores debitis aliquam quia
+              nam, rerum accusamus incidunt a nobis eveniet necessitatibus saepe
+              harum autem eius sequi magnam?
+            </p>
+
+            <article class="about__tab__titles">
+              <p class="tab__link active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab__link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab__link" onclick="opentab('education')">Education</p>
+            </article>
+
+            <article class="about__tab__contents active-cont" id="skills">
+              <ul class="list__cont">
+                <li class="content__list">
+                  <span class="color__span">Web Development</span
+                  ><br /><br />Web app Development
+                </li>
+                <li class="content__list">
+                  <span class="color__span">App Development</span
+                  ><br /><br />Building Android/IOS apps
+                </li>
+              </ul>
+            </article>
+
+            <article class="about__tab__contents" id="experience">
+              <ul class="list__cont">
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024</span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024</span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024</span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+              </ul>
+            </article>
+
+            <article class="about__tab__contents" id="education">
+              <ul class="list__cont">
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024 </span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024</span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li class="content__list">
+                  <span class="color__span">2023 - 2024</span><br /><br />
+                  Lorem ipsum dolor sit amet
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services" class="service">
+      <div class="services-container container">
+        <h2 class="service__title sub-tittle">My Services</h2>
+        <div class="service__list">
+          <article class="service__article">
+            <i class="fa-solid fa-code"></i>
+            <h3 class="service__tittle">Web Design</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore sapiente odit nobis hic autem officia provident, omnis
+              corrupti.
+            </p>
+            <a href="#" class="service__link">Learn more</a>
+          </article>
+          <article class="service__article">
+            <i class="fa-solid fa-crop"></i>
+            <h3 class="service__tittle">Landing Page Design</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore sapiente odit nobis hic autem officia provident, omnis
+              corrupti.
+            </p>
+            <a href="#" class="service__link">Learn more</a>
+          </article>
+          <article class="service__article">
+            <i class="fab fa-app-store"></i>
+            <h3 class="service__tittle">App Design</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore sapiente odit nobis hic autem officia provident, omnis
+              corrupti.
+            </p>
+            <a href="#" class="service__link">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="Portafolio">
+      <div class="container">
+        <h2 class="sub-tittle">My Work</h2>
+
+        <article class="work__list">
+          <figure class="work__item">
+            <img src="./assets/work1.jpg" alt="" class="work__img" />
+            <div class="work__info">
+              <h3 class="work__tittle">Example</h3>
+              <p class="paragraph__work">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                expedita.
+              </p>
+              <a href="#" class="btn__work"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </figure>
+
+          <figure class="work__item">
+            <img
+              src="./assets/work2.jpg"
+              alt="Landing Page"
+              class="work__img"
+            />
+            <div class="work__info">
+              <h3 class="work__tittle">Example</h3>
+              <p class="paragraph__work">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                expedita.
+              </p>
+              <a href="#" class="btn__work"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </figure>
+
+          <figure class="work__item">
+            <img
+              src="./assets/work3.jpg"
+              alt="Social Media App Image"
+              class="work__img"
+            />
+            <div class="work__info">
+              <h3 class="work__tittle">Example</h3>
+              <p class="paragraph__work">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                expedita.
+              </p>
+              <a href="#" class="btn__work"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </figure>
+        </article>
+        <a href="#" class="btn__more">See More</a>
+      </div>
+    </section>
+
+    <section class="contact" id="Contact">
+      <div class="contact__container">
+        <div class="row__contact">
+          <article class="contact__info__left">
+            <h2 class="contact__tittle sub-tittle">Contact Me</h2>
+            <p class="contact__paragraph">
+              <i class="fa-solid fa-envelope"></i>contact@example.com
+            </p>
+            <p class="contact__paragraph">
+              <i class="fa-solid fa-phone"></i>0123456789
+            </p>
+            <div class="container__redes">
+              <ul class="redes__contenedor">
+                <a href="#" class="link__redes">
+                  <li class="icon facebook">
+                    <span class="redes__fa-fab">Facebook</span>
+                    <span><i class="fa fa-facebook"></i></span>
+                  </li>
+                </a>
+
+                <a href="#" class="link__redes">
+                  <li class="icon linkedin">
+                    <span class="redes__fa-fab">Linkedin</span>
+                    <span><i class="fa fa-linkedin"></i></span>
+                  </li>
+                </a>
+
+                <a href="#" class="link__redes">
+                  <li class="icon github">
+                    <span class="redes__fa-fab">GitHub</span>
+                    <span><i class="fa-brands fa-github"></i></span>
+                  </li>
+                </a>
+
+                <a href="#" class="link__redes">
+                  <li class="icon youtube">
+                    <span class="redes__fa-fab">Youtube</span>
+                    <span><i class="fa-brands fa-youtube"></i></span>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <a href="./assets/CV/" download class="btn__contact">Download CV</a>
+          </article>
+
+          <article class="contact__info__right">
+            <h3 class="form__tittle sub-tittle">Form</h3>
+            <form action="">
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Your Name"
+                required
+              />
+
+              <input type="email" name"Email" id="email" placeholder="Your
+              Email" required> <input type="tel" name"Telefone" id="telefono"
+              placeholder="Your Telephone Number" required>
+              <textarea
+                name="Message"
+                id="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn__contact form__button">
+                Submit
+              </button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <footer class="footer__container">
+        <h2 class="subtitle__footer">!Hecho por &copy; Marcos Morua!</h2>
+        <p class="paragraph__footer">
+          Todos los derechos de la pagina reservados 2023-2024
+        </p>
+      </footer>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
+  <script
+    src="https://kit.fontawesome.com/e59d9fdea5.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

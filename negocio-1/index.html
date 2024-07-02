@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- meta etiquetas -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Tu titulo">
+    <meta name="description" content="------------Descripcion------------------">
+    <title>Tu Negocio</title>
+
+    <!-- link -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-------------------------------------- Header --------------------------------------->
+
+    <header class="header" id="header">
+    
+        <nav class="nav">
+            <div class="nav__content container">
+                <a href="#" class="nav__logo"><span class="color__Span">Tu</span>Logo<span class="color__Span">.</span></a>
+    
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="#header">Inicio</a></li>
+                    <li class="nav__link"><a href="#quienes-somos">Nosotros</a></li>
+                    <li class="nav__link"><a href="#services">Servicios</a></li>
+                    <li class="nav__link"><a href="#contacto">Contactame</a></li>
+                </ul>
+    
+                <div class="nav__icon-menu"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-------------------------------------- Main --------------------------------------->
+
+    <main class="main__container">
+
+        <section class="hero__slider">
+
+            <div class="info__slider">
+                <p class="paragraph__slider">Nombre de tu negocio</p>
+                <a href="#quienes-somos"><button class="about__slider">Sobre tu negocio</button></a>
+            </div>
+
+            <div class="list__slider">
+                <article class="item">
+                    <img src="./assets/slider-img-1.jpg" alt="">
+                </article>
+                <article class="item">
+                    <img src="./assets/slider-img-2.jpg" alt="">
+                </article>
+                <article class="item">
+                    <img src="./assets/slider-img-3.jpg" alt="">
+                </article>
+                <article class="item">
+                    <img src="./assets/slider-img-1.jpg" alt="">
+                </article>
+                <article class="item">
+                    <img src="./assets/slider-img-2.jpg" alt="">
+                </article>
+            </div>
+            <div class="buttons">
+                <button id="prev" class="button__slider"><</button>
+                <button id="next" class="button__slider">></button>
+            </div>
+            <ul class="list__li__item">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div class="blur__shadow__slider"></div>
+
+        </section>
+        <section class="info__container container" id="quienes-somos">
+            <article class="info__nosotros">
+                <h2 class="info__title"> Sobre nosotros</h2>
+                <p class="info__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="info__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nam excepturi. Dolores voluptates maxime quisquam accusantium aspernatur, sint porro praesentium itaque minima ipsam dolor doloribus blanditiis illo saepe deserunt sunt.</p>
+                <a href="#contacto"><button class="info__button button__page">Contactame</button></a>
+            </article>
+            <figure class="info__img__container"><img class="info__img" src="./assets/tu_Imagen_white.png" alt=""></figure>
+        </section>
+
+        <div class="services__container container" id="services">
+
+            <article class="title__content">
+                <p class="main__title"><span class="color__Span">S</span>ervicios</p>
+            </article>
+
+            <div class="services__article__content">
+                <article class="services__art">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3 class="services__title">Lorem ipsum dolor</h3>
+                    <p class="services__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus sint debitis porro cum sed, qui optio voluptatibus voluptatum fuga soluta.
+                    </p>
+
+                </article>
+                <article class="services__art">
+
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="services__title">Lorem ipsum dolor</h3>
+                    <p class="services__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus sint debitis porro cum sed, qui optio voluptatibus voluptatum fuga soluta.
+                    </p>
+
+                </article>
+                <article class="services__art">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3 class="services__title">Lorem ipsum dolor</h3>
+                    <p class="services__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus sint debitis porro cum sed, qui optio voluptatibus voluptatum fuga soluta.
+                    </p>
+                    
+                </article>
+                <article class="services__art">
+
+                    <i class="fa-solid fa-lock"></i>
+                    <h3 class="services__title">Lorem ipsum dolor</h3>
+                    <p class="services__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus sint debitis porro cum sed, qui optio voluptatibus voluptatum fuga soluta.
+                    </p>
+                
+                </article>
+            </div>
+        </section>
+
+        <!---------------- Recomendaciones code --------------------------->
+
+        <section class="recomendation container">
+
+            <article class="title__content">
+                <p class="main__title"><span class="color__Span">C</span>lientes</p>
+            </article>
+
+
+            <div class="recomendation__container">
+                <div class="swiper-slide card__recomendation">
+                    <div class="box box-1"></div>
+                    <article class="card__content">
+
+                        <figure class="image_container">
+                            <img src="./assets/cara1.jpg" alt="">
+                        </figure>
+
+                        <article class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </article>
+
+                        <article class="name-profession">
+                            <span class="name__recomendation">Andrew James</span>
+                        </article>
+
+                        <article class="rating__recomendation">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </article>
+
+                        <article class="about__recomendation">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus, laudantium dicta optio assumenda dolorem.
+                        </article>
+
+                        <article class="button__recomendation b1">
+                            <button class="aboutMe">About Me</button>
+                            <button class="aboutMe">Hire Me</button>
+                        </article>
+                        
+                    </article>
+                </div>
+
+                <div class="swiper-slide card__recomendation">
+                    <div class="box box-2"></div>
+                    <article class="card__content">
+
+                        <figure class="image_container">
+                            <img src="./assets/cara3.jpg" alt="">
+                        </figure>
+
+                        <article class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </article>
+
+                        <article class="name-profession">
+                            <span class="name__recomendation">Andrew James</span>
+                        </article>
+
+                        <article class="rating__recomendation">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </article>
+
+                        <article class="about__recomendation">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus, laudantium dicta optio assumenda dolorem.
+                        </article>
+
+                        <article class="button__recomendation b2">
+                            <button class="aboutMe">About Me</button>
+                            <button class="aboutMe">Hire Me</button>
+                        </article>
+                        
+                    </article>
+                </div>
+
+                <div class="swiper-slide card__recomendation">
+                    <div class="box box-3"></div>
+                    <article class="card__content">
+
+                        <figure class="image_container">
+                            <img src="./assets/cara4.jpg" alt="">
+                        </figure>
+
+                        <article class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </article>
+
+                        <article class="name-profession">
+                            <span class="name__recomendation">Andrew James</span>
+                        </article>
+
+                        <article class="rating__recomendation">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </article>
+
+                        <article class="about__recomendation">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus, laudantium dicta optio assumenda dolorem.
+                        </article>
+
+                        <article class="button__recomendation b3">
+                            <button class="aboutMe">About Me</button>
+                            <button class="aboutMe">Hire Me</button>
+                        </article>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!---------------- Formulario code --------------------------->
+
+        <section class="form container" id="contacto">
+
+            <h2 class="form__logo"><span class="form__logo__color">Tu</span>Logo<span class="form__logo__color">.</span></h2>
+            
+            <div class="form__container">
+                
+                <div class="contact__content">
+    
+                    <article class="contact__socialmedia">
+                        <article class="title__content">
+                            <p class="main__title"><span class="color__Span">L</span>et's Connect</p>
+                        </article>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, distinctio</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, nisi iste tenetur, unde perspiciatis ratione corrupti quis, expedita optio nemo voluptates veritatis fugit! Dolores eius consequuntur illum quasi harum quae!</p>
+                        <div class="social-media social-media--contact">
+                            <a href="#" class="social-media__icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-media__icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="social-media__icon"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        
+                    </article>
+                </div>
+                <div class="form__contenido">
+                    <div class="contacto">
+    
+                        <div class="contac-form">
+                            
+                            <article class="title__content">
+                                <p class="main__title"><span class="color__Span">C</span>ontactanos</p>
+                            </article>
+
+                            <form action="">
+    
+                                <p  class="block">
+                                    <input type="text" name="Nombre-y-Apellido" id="Nombre-y-Apellido" placeholder="Tu Nombre" required>
+                                </p>
+                                <p>
+                                    <input type="email" name="Email" id="Email" placeholder="ejemplo@gmail.com" required>
+                                </p>
+                                <p>
+                                    <input type="text" name="celular" id="celular" placeholder="2804 123345" required>
+                                </p>
+                                <p>
+                                    <input type="text" name="provincia" id="provincia" placeholder="Provincia" required>
+                                </p>
+                                <p>
+                                    <input type="text" name="Ciudad" id="ciudad" placeholder="Ciudad" required>
+                                </p>
+                                <p  class="block">   
+                                    <input type="text" name="proposito" id="proposito" placeholder="Motivo del contacto con nosotros" required>
+                                </p>
+                                <p class="block">
+                                    <textarea name="Message" id="Message" rows="5" placeholder="Datos sobre su consulta en especifico" required></textarea>
+                                </p>
+                                <p class="block button__submit__form">
+                                    <button type="submit">Enviar</button>
+                                </p>
+                            </form>
+                        </div>                
+    
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!----------------------------- Icono de whatapp flotante ------------------------------>
+
+    <a href="https://api.whatsapp.com/send?phone=123456789" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+
+    <!-------------------------------------- Footer --------------------------------------->
+
+    <footer class="footer">
+        
+        <article class="info__footer container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d732.0446643700809!2d-65.03939658446872!3d-42.78457284976444!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1672107688784!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div>
+                <aside class="info__Content">
+                    <h2 class="footer__title">Trabajos</h2>
+                    <a href="services.html">¿Quienes somos?</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +54 9 2804</a>
+                    <a href="#"><i class="fa-solid fa-house"></i> Direccion</a>
+                </aside>
+                <aside class="info__Content">
+                    <h2 class="footer__title">Redes sociales</h2>
+                    <a href="#"><i class="fa-solid fa-envelope"></i> Gmail</a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </aside>
+            </div>
+
+        </article>
+
+        <article class="footer__container">
+    
+            <h2 class="subtitle__footer">!Hecho por &copy; Marcos Morua!</h2>
+            <p class="paragraph__footer"> Todos los derechos de la pagina reservados 2023-2024</p>
+    
+        </article>
+
+    </footer>
+
+</body>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/1dd5c61ab9.js" crossorigin="anonymous"></script>
+</html>

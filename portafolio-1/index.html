@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <!-- Meta -->
+
+    <meta name="title" content="Tu titulo" />
+    <meta name="description" content="-------Descripcion------------------" />
+
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <!------------- Header ---------------->
+
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__content container">
+          <a href="#" class="nav__logo"
+            ><span class="logo__nav__color">Tu</span>Logo<span
+              class="logo__nav__color"
+              >.</span
+            ></a
+          >
+
+          <ul class="nav__links">
+            <li class="nav__link"><a href="#inicio">Inicio</a></li>
+            <li class="nav__link"><a href="#sobre-mi">Sobre mi</a></li>
+            <li class="nav__link"><a href="#servicios">Servicios</a></li>
+            <li class="nav__link"><a href="#projrectos">Projectos</a></li>
+            <li class="nav__link"><a href="#contacto">Contactame</a></li>
+          </ul>
+
+          <div class="nav__icon-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--------- Hero ---------->
+
+      <section class="hero__main container" id="inicio">
+        <article class="hero__texts">
+          <div class="hero__content">
+            <h1 class="hero__title">Tu Nombre</h1>
+            <p class="hero__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, nam! Sunt totam magni deserunt.
+            </p>
+            <a href="#Contacto" class="hero__cta">¡Contactanos!</a>
+            <h2 class="hero__tex__redes">Redes Sociales</h2>
+          </div>
+          <div class="container__redes">
+            <ul class="redes__contenedor">
+              <a href="#" class="link__redes">
+                <li class="icon facebook">
+                  <span class="redes__fa-fab">Facebook</span>
+                  <span><i class="fa fa-facebook"></i></span>
+                </li>
+              </a>
+
+              <a href="#" class="link__redes">
+                <li class="icon tiktok">
+                  <span class="redes__fa-fab">TikTok</span>
+                  <span><i class="fab fa-tiktok"></i></span>
+                </li>
+              </a>
+
+              <a href="#" class="link__redes">
+                <li class="icon instagram">
+                  <span class="redes__fa-fab">Instagram</span>
+                  <span><i class="fab fa-instagram"></i></span>
+                </li>
+              </a>
+
+              <a href="#" class="link__redes">
+                <li class="icon youtube">
+                  <span class="redes__fa-fab">Youtube</span>
+                  <span><i class="fa-brands fa-youtube"></i></span>
+                </li>
+              </a>
+
+              <a href="#" class="link__redes">
+                <li class="icon twitter">
+                  <span class="redes__fa-fab">Twitter</span>
+                  <span><i class="fa-brands fa-x-twitter"></i></span>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <figure class="hero__figure">
+          <img
+            src="./assets/svg/illustration-hero.svg"
+            alt="img de Portada"
+            class="hero__img"
+          />
+        </figure>
+      </section>
+
+      <!--------- About ---------->
+
+      <section class="about__main container" id="sobre-mi">
+        <div class="about container">
+          <div class="about__row">
+            <figure class="about__colum__img">
+              <img
+                src="./assets/Tu_Imagen.png"
+                alt="Tu imagen"
+                class="about__img"
+              />
+            </figure>
+            <div class="about__colum__title">
+              <h2 class="about__title sub-tittle">Sobre Mi</h2>
+              <p class="about__paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, inventore iste corrupti, dolores debitis aliquam quia
+                nam, rerum accusamus incidunt a nobis eveniet necessitatibus
+                saepe harum autem eius sequi magnam?
+              </p>
+
+              <article class="about__tab__titles">
+                <p class="tab__link active-link" onclick="opentab('skills')">
+                  Habilidades
+                </p>
+                <p class="tab__link" onclick="opentab('experience')">
+                  Experiencia
+                </p>
+                <p class="tab__link" onclick="opentab('education')">
+                  Educación
+                </p>
+              </article>
+
+              <article class="about__tab__contents active-cont" id="skills">
+                <ul class="list__cont">
+                  <li class="content__list">
+                    <span class="color__span">Lorem ipsum dolor</span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="content__list">
+                    <span class="color__span">Lorem ipsum dolor sit amet</span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                </ul>
+              </article>
+
+              <article class="about__tab__contents" id="experience">
+                <ul class="list__cont">
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024</span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024</span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024</span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                </ul>
+              </article>
+
+              <article class="about__tab__contents" id="education">
+                <ul class="list__cont">
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024 </span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024 </span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="content__list">
+                    <span class="color__span">2023 - 2024 </span
+                    ><br /><br />Lorem ipsum dolor sit amet
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------- SERVICES ---------->
+
+      <section class="services" id="servicios">
+        <div class="section__content container">
+          <h2 class="sub-tittle sub-tittle--black">Mis Servicios</h2>
+
+          <div class="services__cards">
+            <div class="services__card">
+              <i class="services__card-icon fa-solid fa-code"></i>
+              <h3 class="services__card-title">Lorem ipsum dolor sit</h3>
+              <p class="services__card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur, accusamus.
+              </p>
+            </div>
+
+            <div class="services__card">
+              <i class="services__card-icon fa-solid fa-pen-nib"></i>
+              <h3 class="services__card-title">Lorem ipsum dolor sit</h3>
+              <p class="services__card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur, accusamus.
+              </p>
+            </div>
+
+            <div class="services__card">
+              <i class="services__card-icon fa-solid fa-mobile"></i>
+              <h3 class="services__card-title">Lorem ipsum dolor sit</h3>
+              <p class="services__card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur, accusamus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------- PROJECTOS ------>
+
+      <section class="proyects" id="projectos">
+        <div class="section__content container">
+          <h2 class="sub-tittle sub-tittle--black">Mis Proyectos</h2>
+
+          <div class="proyects__cards">
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_1.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 1</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_2.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 2</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_3.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 3</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_1.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 4</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_2.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 5</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <img
+                src="./assets/proyecto_img_3.jpg"
+                alt="imagen del Proyecto"
+                class="proyects__card-img"
+              />
+              <div class="proyects__card-info">
+                <h3 class="proyects__card-title">Proyecto 6</h3>
+                <p class="proyects__card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- Slider ---------------->
+
+      <section class="testimonials">
+        <article
+          class="hero-image"
+          style="
+            --hero-image: url('./assets/bg.jpg');
+            --hero-attachment: scroll;
+          "
+        >
+          <aside
+            class="hero-image-opacity"
+            style="--hero-opacity-color: var(--black-alpha-color)"
+          >
+            <div class="hero-image-content">
+              <div class="container">
+                <h2 class="sub-tittle sub-tittle--black">Mis clientes dicen</h2>
+                <article
+                  class="carousel"
+                  style="--carousel-bg-color: var(--black-alpha-color)"
+                >
+                  <!-- inputs slides-->
+
+                  <input type="radio" name="slides" id="slide-1" checked />
+                  <input type="radio" name="slides" id="slide-2" />
+                  <input type="radio" name="slides" id="slide-3" />
+                  <input type="radio" name="slides" id="slide-4" />
+
+                  <!-- slides content -->
+
+                  <ul class="slides">
+                    <li class="slide">
+                      <img
+                        class="avatar"
+                        src="./assets/cara1.jpg"
+                        alt="Cliente 1"
+                      />
+                      <blockquote>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minima nostrum esse quo temporibus veniam
+                        aspernatur officiis voluptate quisquam, accusantium
+                        voluptates quos nesciunt vitae voluptatem sapiente a
+                        beatae, incidunt iure autem."
+                      </blockquote>
+                      <h3 class="text-first-color">Nombre del cliente</h3>
+                      <h6>Puesto del Cliente</h6>
+                    </li>
+                    <li class="slide">
+                      <img
+                        class="avatar"
+                        src="./assets/cara2.jpg"
+                        alt="Cliente 2"
+                      />
+                      <blockquote>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minima nostrum esse quo temporibus veniam
+                        aspernatur officiis voluptate quisquam, accusantium
+                        voluptates quos nesciunt vitae voluptatem sapiente a
+                        beatae, incidunt iure autem."
+                      </blockquote>
+                      <h3 class="text-first-color">Nombre del cliente</h3>
+                      <h6>Puesto del Cliente</h6>
+                    </li>
+                    <li class="slide">
+                      <img
+                        class="avatar"
+                        src="./assets/cara3.jpg"
+                        alt="Cliente 3"
+                      />
+                      <blockquote>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minima nostrum esse quo temporibus veniam
+                        aspernatur officiis voluptate quisquam, accusantium
+                        voluptates quos nesciunt vitae voluptatem sapiente a
+                        beatae, incidunt iure autem."
+                      </blockquote>
+                      <h3 class="text-first-color">Nombre del cliente</h3>
+                      <h6>Puesto del Cliente</h6>
+                    </li>
+                    <li class="slide">
+                      <img
+                        class="avatar"
+                        src="./assets/cara4.jpg"
+                        alt="Cliente 4"
+                      />
+                      <blockquote>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Minima nostrum esse quo temporibus veniam
+                        aspernatur officiis voluptate quisquam, accusantium
+                        voluptates quos nesciunt vitae voluptatem sapiente a
+                        beatae, incidunt iure autem."
+                      </blockquote>
+                      <h3 class="text-first-color">Nombre del cliente</h3>
+                      <h6>Puesto del Cliente</h6>
+                    </li>
+                  </ul>
+
+                  <!-- slide buttons -->
+
+                  <aside class="slides-nav">
+                    <label for="slide-1" id="dot-1"></label>
+                    <label for="slide-2" id="dot-2"></label>
+                    <label for="slide-3" id="dot-3"></label>
+                    <label for="slide-4" id="dot-4"></label>
+                  </aside>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </article>
+      </section>
+
+      <!------------- Form ---------------->
+
+      <section class="form__container container" id="contacto">
+        <figure class="form__figure"></figure>
+        <div class="form__contenido">
+          <h2 class="form__logo">
+            <span class="form__logo__color">Tu</span>Logo<span
+              class="form__logo__color"
+              >.</span
+            >
+          </h2>
+
+          <div class="contacto">
+            <div class="contac-form">
+              <h3>Contactanos</h3>
+              <form action="">
+                <p>
+                  <label>Nombre Completo</label>
+                  <input
+                    type="text"
+                    name="Nombre-y-Apellido"
+                    id="Nombre-y-Apellido"
+                    placeholder="Tu Nombre"
+                    required
+                  />
+                </p>
+                <p>
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="Email"
+                    placeholder="ejemplo@gmail.com"
+                    required
+                  />
+                </p>
+                <p>
+                  <label>Telefono</label>
+                  <input
+                    type="text"
+                    name="celular"
+                    id="celular"
+                    placeholder="+54 9 280 402313"
+                  />
+                </p>
+                <p>
+                  <label>Provincia</label>
+                  <input
+                    type="text"
+                    name="provincia"
+                    id="provincia"
+                    placeholder="Chubut"
+                  />
+                </p>
+                <p>
+                  <label>Ciudad</label>
+                  <input
+                    type="text"
+                    name="Ciudad"
+                    id="ciudad"
+                    placeholder="Puerto Madryn"
+                  />
+                </p>
+                <p>
+                  <label>Proposito</label>
+                  <input
+                    type="text"
+                    name="proposito"
+                    id="proposito"
+                    placeholder="Motivo del contacto con nosotros"
+                  />
+                </p>
+                <p class="block">
+                  <label>Informacion</label>
+                  <textarea
+                    name="Message"
+                    id="Message"
+                    rows="5"
+                    placeholder="Datos sobre su consulta en especifico"
+                  ></textarea>
+                </p>
+                <p class="block">
+                  <button type="submit">Enviar</button>
+                </p>
+              </form>
+            </div>
+
+            <article class="contac-info">
+              <h4>Como contactarme</h4>
+              <ul class="form__info">
+                <li class="form__info__list">
+                  <i class="fa-solid fa-location-dot"></i> Tu ciudad
+                </li>
+                <li class="form__info__list">
+                  <i class="fa-solid fa-phone"></i>Telefono
+                </li>
+                <li class="form__info__list">
+                  <i class="fa-solid fa-envelope"></i> tu_gmail@gmail.com
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!------------- Footer ---------------->
+
+    <footer class="footer">
+      <article class="footer__container">
+        <h2 class="subtitle__footer">!Hecho por &copy; Marcos Morua!</h2>
+        <p class="paragraph__footer">
+          Todos los derechos de la pagina reservados 2023-2024
+        </p>
+      </article>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
+  <script
+    src="https://kit.fontawesome.com/e59d9fdea5.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

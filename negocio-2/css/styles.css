@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100&display=swap');
+
+/*------------ Variables -------------------*/
+
+:root{
+
+    scroll-behavior: smooth;
+
+    /*---------- Fuentes ---------*/
+
+    --font: 'Poppins', sans-serif;
+
+    /*---------- Colores ---------*/
+
+    --body-color: #181818;
+    --sidebar-color: #111111;
+    --text-color: #e7e7e7;
+    --color: #e75454;
+
+}
+
+/*------------------------- HTML --------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*------------------ Etiquetas Reutilizables -------------*/
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+
+.main__content__body{ margin-left: 5em; }
+
+.footer{ margin-left: 5em; }
+
+.button__page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    color: var(--body-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 10px 23px;
+}
+
+.button__page:hover{
+    background-color: var(--color);
+    color: var(--text-color);
+}
+
+.title__image{
+    font-size: 1.8em;
+    color: var(--color);
+}
+
+.wrapper i{ background: var(--text-color); color: var(--body-color);}
+
+
+/*------------------ Navbar (Close bar) -------------*/
+
+.sidebar{
+    background-color: var(--sidebar-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5em;
+    padding: 1em 0;
+    box-shadow: 0 em rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.4s ease;
+}
+
+/*------------------ sidebar Logo y Arrow -------------*/
+
+.sidebar__logo-name,
+.sidebar__link-name{ display: none; white-space: nowrap; }
+.sidebar__top-content{ display: flex; align-items: center;}
+.sidebar__logo{ width: 2.5em; border-radius: .3em;}
+
+.sidebar__arrow{
+    background-color: var(--text-color);
+    position: absolute;
+    right: -1em;
+    top: 4.8em;
+    font-size: 1.1rem;
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    box-shadow: 0.1em 0 0.2em rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 8px 12px;
+    transform: rotate(180deg);
+    transition: 0.4s ease;
+}
+
+/*---------------------- sidebar Links ------------------*/
+
+.sidebar__links{ margin-top: 6.5em; height: 100%; }
+.sidebar__link{ margin-bottom: 3em; }
+.sidebar__link a{ color: var(--text-color); display: flex; align-items: center; }
+.sidebar__link-icon{ font-size: 1.3rem; }
+.sidebar__link-name{ font-size: 1rem; margin-left: 0.8em; }
+.sidebar__link--logout{ position: absolute; bottom: 0; }
+
+/*------------------------- Hover -----------------------*/
+
+.sidebar__link a:hover .sidebar__link-name{
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    background-color: var(--text-color);
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+.sidebar .sidebar__link:hover a{ color: var(--color); }
+
+/*--------------------- Open SideBar ------------------*/
+
+.sidebar.active{
+    width: 13em;
+    padding-left: 0.8em;
+    align-items: start;
+}
+
+.sidebar.active .sidebar__logo-name,
+.sidebar.active .sidebar__link-name{ display: inline-block; }
+
+.sidebar.active .sidebar__logo-name{
+    font-size: 1.2rem;
+    margin-left: .7em;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.sidebar.active .sidebar__arrow{ transform: rotate(360deg); transition: 0.4s ease-in-out; }
+
+.sidebar.active .sidebar__links{ padding-left: 1em; }
+
+/*--------------------- Sin Hover --------------------*/
+
+.sidebar.active .sidebar__link a:hover .sidebar__link-name{
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+/*------------------- hover icons ---------------------*/
+
+.animation-icon:hover {
+    -webkit-animation: tada 1.3s ease-in infinite;
+            animation: tada 1.3s ease-in infinite;
+}
+
+/*------------------ Estilos de la introduccion --------------------------*/
+
+.section__intro{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/casa-moderna.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.content__intro__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    position: absolute;
+    top: 5em;
+    left: 7em;
+    z-index: 5;
+}
+
+.section__intro-title{
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.section__intro-description{
+    width: 70%;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.info__intro__text__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+}
+
+.content__intro__text .button__page{
+    font-size: 1em;
+}
+
+.section__intro img{
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*------------------ Estilos de la informacion --------------------------*/
+
+.info__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/*----------------------- nav contact styles --------------------------*/
+
+.container__contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__contacts li{
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.Logo__text{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.color__Span__logo{
+    color: var(--color);
+}
+
+/*---------------------- Estilos Main de la info ---------------------*/
+
+.info__article{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.info__article .title__info__color{
+    color: var(--text-color);
+}
+
+.container__title__info{
+    margin:30px 0;
+    z-index: 10;
+}
+
+.container__text__info{
+    margin-bottom: 20px;
+}
+
+.text__info{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.info__link{
+    display: flex;
+    flex-direction: row;
+    width: 140px;
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    transition: 0.4s ease;
+}
+
+.info__link i{
+    padding-left: 5px;
+    padding-top: 3px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.info__link:hover{
+    transform: scale(1.1);
+    padding-left: 10px;
+}
+
+
+.container__img__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    margin: 10px auto;
+}
+
+.info__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------- Aside estiles ------------------------*/
+
+.info__aside__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.info__text__aside{
+    font-size: 0.9em;
+    margin: 14px 6px;
+    width: 70%;
+}
+
+.number__big__aside{
+    font-size: 2.8em;
+}
+
+.content__text__aside{
+    display: flex;
+    justify-content: start;
+    width: 45%;
+    margin-right: 10px;
+}
+
+
+/*---------------------------------------------------*/
+
+.gallery__content{
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------- Gallery Shadow ---------------*/
+
+.body__shadow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 100%;
+    width: 100%; height: 85vh;
+}
+
+.shadow__1{ background-color: rgba(0, 0, 0, 0.2); }
+.shadow__2{ background-color: rgba(0, 0, 0, 0.1); }
+.shadow__3{ background-color: rgba(0, 0, 0, 0.2); }
+.shadow__4{ background-color: rgba(0, 0, 0, 0.3); }
+
+/*-------------- Informacion de la galeria ------------*/
+
+.container__info__img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.body__image__galery{
+    position: relative;
+    height: 100%;
+    width: 50%; height: 85vh;
+}
+
+.container__info__img .title__image{
+    margin: 40px 0 0px 20px;
+}
+
+.container__info__img .title-1{ color: #9b9b9b; }
+.container__info__img .title-2{ color: #000000; }
+.container__info__img .title-3{ color: #d6d6d6; }
+.container__info__img .title-4{ color: #a13a3a; }
+
+.subtitle__image{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 0px 20px;
+}
+
+
+.link__gallery {
+    z-index: 15;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 20px 25px;
+    transition: 0.2s ease-in;
+    color: var(--text-color);
+    top: 37%;
+    left: 20%;
+}
+
+.link__gallery i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 2em;
+}
+
+
+.link__gallery:hover{
+    opacity: 1;
+}
+
+.gallery__text__rotate{
+    font-size: 0.8em;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 31.5em;
+    left: -4.4em;
+}
+
+/*---------------- Imagenes de la galeria ------------*/
+.image__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*---------------------- Formulario -------------------*/
+
+.form__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__title__form{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form__Span{
+    color: var(--color);
+}
+
+/*---------------- Social media icons and info -------------*/
+
+.contact__content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    width: 100%;
+}
+
+.content__text__form{
+    margin: .5em 0 1em;
+}
+
+.number__contact__telephone{
+    font-size: 2.5em;
+}
+
+.social-media{ display: flex; justify-content: start;}
+.social-media--contact{ gap: 2em; }
+
+.social-media__icon i{
+    font-size: 2em;
+    color: var(--text-color);
+    transition: color .3s ease;
+}
+
+.social-media__icon i:hover{
+    color: var(--color);
+}
+
+
+/*---------------------- form content ------------------------*/
+
+.form__contenido{
+    width: 100%;
+}
+
+.contac-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.contac-form form .block{
+    grid-column: 1/3;
+}
+
+.contac-form form p{
+    margin: 2px 0;
+    padding: 0.2em .4em;
+
+}
+
+.contac-form, .title__content{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contac-form form input,
+.contac-form form textarea{
+
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border: none;
+    outline: none;
+    background-color: #3d3d3d;
+    color: var(--text-color);
+
+}
+
+.contac-info > *{
+    font-size: 1.1em;
+    list-style: none;
+}
+
+.contac-form form button{
+    width: 100%;
+    border-radius: 30px;
+}
+
+/*------------------------------- Footer styles -----------------------------*/
+
+.footer__container{
+    text-align: center  ;
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid var(--color);
+    padding-top: 10px;
+}
+
+.subtitle__footer{
+    font-size: 1rem;
+}
+
+.paragraph__footer{
+    font-size: 0.8rem;
+}
+
+/*=======================================================================================================
+=                                        KeyFrames y webkit                                                 =
+========================================================================================================*/
+
+@-webkit-keyframes tada
+{
+    from
+    {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    10%,20%
+    {
+        -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+    }
+    30%,50%,70%,90%
+    {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+    }
+    40%,60%,80%
+    {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+    }
+    to
+    {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada
+{
+    from
+    {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    10%,20%
+    {
+        -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+    }
+    30%,50%,70%,90%
+    {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+    }
+    40%,60%,80%
+    {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+                transform: rotate3d(0, 0, 1, -10deg);
+    }
+    to
+    {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+/*=======================================================================================================
+=                                        Media queries                                                  =
+========================================================================================================*/
+
+@media (min-width: 768px){
+
+    /*-------------- etiquetas reutilizables media ---------------------*/
+
+    .button__page{
+        font-size: 1.2em;
+        padding: 13px 40px;
+    }
+
+    .main__content__body{ margin-left: 6em; }
+
+    /*------------------ Sidebar ------------------*/
+    .sidebar{ width: 6em;}
+    
+    /*------------------ sidebar Logo y Arrow -------------*/
+    
+    .sidebar__logo{ width: 3em; }
+    
+    .sidebar__arrow{ 
+        padding: 10px 14px; 
+        right: -1.1em;
+        top: 6em;
+        font-size: 1.1rem;
+    }
+    
+    /*---------------------- sidebar Links ------------------*/
+    
+    .sidebar__link-icon{ font-size: 1.5rem; }
+    .sidebar__link-name{ font-size: 1.1rem; margin-left: 1em; }
+    
+    /*--------------------- Open SideBar ------------------*/
+    
+    .sidebar.active{ width: 15em; padding-left: 1em; }
+
+    .sidebar.active .sidebar__logo-name{
+        margin-left: .8em;
+        font-size: 1.5rem;
+    }
+
+    /*--------------------- Intro query --------------------*/
+
+    .content__intro__text .button__page{
+    font-size: 1.1em;
+    padding: 13px 25px;
+    }
+    
+    .content__intro__text{
+        top: 1.5em;
+        left: 7em;
+        z-index: 5;
+    }
+    .section__intro-title{ font-size: 1.5em; }
+    
+    .section__intro-description{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 1.5em;
+    }
+    
+    .info__intro__text__container{
+        margin-top: 5em;
+        margin-left: 2.7em;
+    }
+
+    /*----------------------- info Queary --------------------------*/
+
+    .container__contacts{ flex-direction: row;}
+    .container__contacts li{ margin: 23px 50px 23px 0; font-size: 0.9em; }
+
+    /*---------------------- Estilos Main de la info ---------------------*/
+
+    .info__article{ flex-direction: row; margin: 25px; }
+    .container__title__info{ margin: 30px 0; }
+    .container__text__info{ margin-bottom: 20px; }
+    .text__info{ width: 70%; font-size: 0.95em; margin: 1em 1em 15px 15%; }
+    .info__link{ margin-left: 15%; }
+
+    .container__img__info{
+        width: 1600px;
+        height: 650px;
+        margin: 80px auto 0;
+    }
+
+    /*---------------------------- Aside estiles ------------------------*/
+
+    .info__aside__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .info__text__aside{ font-size: 0.9em; margin: 20px 6px; width: 100%; }
+    .number__big__aside{ font-size: 3.3em; }
+    .content__text__aside{ width: 22%; margin-right: 13px; }
+
+
+    /*---------------------------- Gallery media --------------------------*/
+
+    .body__image__galery{
+        position: relative;
+        width: 25%; 
+        height: 100vh;
+    }
+
+    .body__shadow{
+        width: 100%; 
+        height: 100vh;
+    }
+
+    /*-------------------------- Gallery info media -----------------------*/ 
+
+    .container__info__img .title__image{
+        font-size: 2em;
+        margin: 55px 0 0px 25px;
+    }
+
+    .subtitle__image{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 0 0 0px 25px;
+    }
+
+    .link__gallery {
+        top: 37%;
+        left: 10%;
+    }
+    
+    .link__gallery i{
+        width: 100px;
+        height: 100px;
+        font-size: 2em;
+    }
+
+    .gallery__text__rotate{ top: 39.5em; }
+
+    /* ------------------------- Form Media styles ----------------------*/
+
+    .form__container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main__title__form{ font-size: 2.3em; text-align: left; }
+
+    /*---------------- Social media icons and info -------------*/
+
+    .contact__content{ margin-left: 40px; }
+    .content__text__form{margin: 0em 0 1em; }
+    .social-media__icon i{ font-size: 2em; }
+    .info__form__contac{ font-size: 0.9em;}
+
+    /*---------------------- form content ------------------------*/
+
+    .contac-form form{
+        margin-left: 100px;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    .text__info{ width: 65%; font-size: 1em;}
+
+    .container__img__info{
+        width: 1600px;
+        height: 500px;
+        margin: 80px auto 0;
+    }
+
+    .link__gallery {
+        top: 37%;
+        left: 19%;
+    }
+    
+    .link__gallery i{
+        width: 120px;
+        height: 120px;
+        font-size: 2em;
+    }
+}
+
+
+@media (min-width: 1900px) {
+    /*-------------- etiquetas reutilizables media ---------------------*/
+    .container{
+        max-width: 1900px;
+    }
+    .button__page{ font-size: 2.8rem; padding: 13px 40px; }
+    .title__image { font-size: 4em; }
+    .main__content__body{ margin-left: 8em; }
+    /*------------------ Sidebar ------------------*/
+    .sidebar{ width: 8em;}
+    /*------------------ sidebar Logo y Arrow -------------*/
+    .sidebar__logo{ width: 5em; }
+    .sidebar__arrow{ 
+        padding: 15px 18px;
+        right: -1.1em;
+        top: 5em;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    /*---------------------- sidebar Links ------------------*/
+    .sidebar__link-icon{ font-size: 3rem; }
+    .sidebar__link-name{ font-size: 1.8rem; margin-left: 1em; }
+    .sidebar__link { margin-bottom: 7em;}
+    /*--------------------- Open SideBar ------------------*/
+    .sidebar.active{ width: 18em; padding-left: 1em; }
+    .sidebar.active .sidebar__logo-name{ margin-left: .8em; font-size: 1.8rem; }
+    /*--------------------- Intro query --------------------*/
+    .content__intro__text .button__page{ font-size: 2.5em; padding: 18px 45px; }
+    .content__intro__text{ top: 1.8em; left: 9em; z-index: 5; }
+    .section__intro-title{ font-size: 2.3em; }
+    .section__intro-description{ width: 70%; margin-bottom: 30px; font-size: 3em; }
+    .info__intro__text__container{ margin-top: 8em; margin-left: 5em;}
+    /*----------------------- info Queary --------------------------*/
+    .Logo__text { font-size: 4em; }
+    .container__contacts li{ margin: 36px 50px 23px 0; font-size: 1.4em; }
+    /*---------------------- Estilos Main de la info ---------------------*/
+    .text__info{ font-size: 1.4em; margin: 1em 1em 15px 15%; }
+    .info__link{ font-size: 1.8rem; width: 300px;}
+    .info__link i { padding-top: 5px; font-size: 2rem; }
+    .container__img__info{ width: 2000px; height: 750px;}
+    /*---------------------------- Aside estiles ------------------------*/
+    .info__text__aside{ font-size: 1.5em; margin: 20px 6px; width: 100%; }
+    .number__big__aside{ font-size: 5em; }
+    .content__text__aside{ width: 22%; margin-right: 13px; }
+    /*-------------------------- Gallery info media -----------------------*/ 
+    .container__info__img .title__image{ font-size: 4em; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);}
+    .subtitle__image{ font-size: 3em; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);}
+    .link__gallery {
+        padding: 45px 45px;
+        top: 37%;
+        left: 13%;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .link__gallery i{
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 120px;
+        padding: 120px;
+        font-size: 6em;
+    }
+
+    .gallery__text__rotate{ font-size: 1.6rem;  top: 35em; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);}
+
+    /* ------------------------- Form Media styles ----------------------*/
+
+    .form__container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__title__form{ font-size: 4em; text-align: left; }
+
+    /*---------------- Social media icons and info -------------*/
+
+    .contac-form form input, .contac-form form textarea {
+        width: 100%;
+        padding: 0.9em;
+        font-size: 2rem;
+    }
+    .number__contact__telephone {font-size: 4.5em;}
+    .contact__content{ margin-left: 40px; }
+    .content__text__form{margin: 0em 0 3em; }
+    .social-media__icon i{ font-size: 4.5em; }
+    .info__form__contac{ font-size: 1.7em;}
+
+    /*---------------------- form content ------------------------*/
+
+    .contac-form form{
+        margin-left: 100px;
+    }
+}
