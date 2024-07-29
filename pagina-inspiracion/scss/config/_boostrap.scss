@@ -1,0 +1,78 @@
+/* Boostrap selectores reutilizables */
+
+.row {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+// Ventana modal de Boostrap
+
+.modal{
+  --bs-modal-padding: 0;
+  --bs-modal-margin: 0;
+  --bs-modal-width: 70%;
+}
+
+// Dropdown Boostrap 
+
+.dropdown{
+
+  width: 100%;
+  height: 150px;
+
+  .btn{
+    position: relative;
+    background-color: $second-color-bg;
+    width: 100%;
+    border: none;
+    color: $main-text-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+    z-index: 100;
+
+    &::after{
+      content: "";
+      display: none;
+    }
+
+    &:focus:not(:focus-visible){
+      outline: none;
+    }
+
+    &:hover{
+      color: $main-color;
+    }
+  }
+
+  .btn.show{
+    border: none;
+  }
+
+  .dropdown-menu{
+    width: 100%;
+    transition: transform 0.4s;
+    border: none;
+    background: transparent;
+    z-index: 99;
+
+    .dropdown-item{
+      color: $main-text-color;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      &:hover{ 
+        background-color: transparent;
+        color: $main-color;
+      }
+    }
+  }
+}

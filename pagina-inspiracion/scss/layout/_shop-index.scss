@@ -1,0 +1,187 @@
+/*================== shop page styles ====================*/
+
+/*----------------- shop styles -------------------*/
+
+.form__container {
+  @include dplay (center, space-between, 3rem);
+  flex-direction: column;
+  padding: 20px;
+
+  // shop layout 
+
+  .shop__product {
+    flex: 0 0 100%;
+    max-width: 100%;
+    @include dplay (center, space-between, 3rem);
+    flex-direction: column;
+
+    .shop__info {
+      background-color: $shop-background;
+      display: grid;
+      gap: 2rem;
+      padding: 40px 30px 50px;
+
+      .product__title {
+        font-size: 2.2rem;
+      }
+
+      .info__btn{
+        width: max-content;
+        display: inline-flex;
+        gap: 0.5rem;
+        font-weight: $fw-500;
+        transition: transform 0.3s;
+
+        &:hover{
+          transform: translateX(0.7rem) scale(1.05);
+          i{
+            animation: aicon 1.3s ease-in infinite;
+          }
+        }
+
+        i{
+          font-size: 1.5rem;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+
+  // Modal styles 
+
+  .modal{
+
+    .modal-dialog{
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .modal-content{
+        top: 0;
+        padding: 2rem 2rem 3rem;
+        border-radius: 16px;
+        position: absolute;
+        background-color: $second-color-bg;
+
+        .modal-header{
+          justify-content: end;
+          border: none;
+          
+          .close__modal{
+            position: relative;
+            top: -15px;
+            right: -10px;
+            color: $main-color;
+
+            i{
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        .modal-body{
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+
+          .modal__title {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+          }
+
+          .modal__body__content{
+            @include dplay(start, start, 2rem);
+            flex-direction: column;
+
+            .subtitle__h3,
+            .product__price__text{
+              font-size: 1.4rem
+            }
+
+            .subtitle__h3:first-of-type{
+              margin-top: 0;
+            }
+
+            .paragraph{
+              font-size: 0.928rem;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Form styles 
+
+  .contact__mail {
+    background-color: $form-background;
+    width: 100%;
+    padding: 30px;
+
+    .contact__title {
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .contact__title:last-of-type {
+      margin-bottom: 30px;
+    }
+
+    // form styles
+
+    .user__form {
+      margin-bottom: 40px;
+    }
+
+    .contact-form {
+      .contact__group {
+        flex-direction: column;
+
+        .contact__box {
+        width: 100%;
+        }
+      }
+    }
+
+    .paid-form {
+      .contact__group {
+        .contact__box {
+        width: 30%;
+        }
+      }
+    }
+
+    /* inputs containers */
+
+    .contact__box {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0.5rem;
+
+      .contact__label {
+        margin: 10px 0 0 2px;
+      }
+    }
+
+    .contact__group {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .contact__label {
+        margin: 10px 0 0 2px;
+      }
+    }
+
+    // button form
+
+    .button__container {
+      @include dplay(center, center, 0);
+      margin-top: 30px;
+      flex-direction: column;
+      transition: 0.4s;
+    }
+  }
+}
